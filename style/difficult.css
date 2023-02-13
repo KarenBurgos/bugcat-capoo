@@ -1,0 +1,83 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#difficult-section {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 50vh;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.difficult-level {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+#easy-add {
+    background-color: var(--add-light);
+}
+
+#intermidean-add {
+    background-color: var(--add);
+}
+
+#difficult-add {
+    background-color: var(--add-dark);
+}
+
+#easy-less {
+    background-color: var(--less-light);
+}
+
+#intermidean-less {
+    background-color: var(--less);
+}
+
+#difficult-less {
+    background-color: var(--less-dark);
+}
+
+#easy-multiplication {
+    background-color: var(--multiplication-light);
+}
+
+#intermidean-multiplication {
+    background-color: var(--multiplication);
+}
+
+#difficult-multiplication {
+    background-color: var(--multiplication-dark);
+}
+
+#easy-division {
+    background-color: var(--division-light);
+}
+
+#intermidean-division {
+    background-color: var(--division);
+}
+
+#difficult-division {
+    background-color: var(--division-dark);
+}
+
+#go-back {
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    z-index: 1;
+    font-size: 3vw;
+    margin: 3%;
+}
+
+i:hover {
+    cursor: pointer;
+}

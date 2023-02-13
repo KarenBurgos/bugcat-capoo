@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
+:root {
+    --background-color: #FCFCFC;
+    --primary-color: #5ac4e4;
+    --input-color: #e3e4e3;
+    --text: #4e4e4e ;
+    --division-dark: #7bd48e;
+    --division: #A0E8AF;
+    --division-light: #c9eed1;
+    --multiplication-dark: #29adce;
+    --multiplication: #54C9E7;
+    --multiplication-light: #92d5e6;
+    --less-dark: #ffcc4a;
+    --less: #ffd467;
+    --less-light: #f3d790;
+    --add-dark: #f78778;
+    --add: #F8AAA0;
+    --add-light: #fac2ba;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+    color: var(--text);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 10vh;  
+    margin: 2vh;
+}
+
+h2 {
+    font-size: 4vh;
+}
+
+#home-section {
+    margin: 3% 0;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+ul {
+    margin: 0 10VW;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    height: 10vh;
+    margin-bottom: 4vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* -------------- operation options efect-------------- */
+
+.operation:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: -95%;
+    top: 0;
+    transition: .3s;
+}
+
+.operation:hover::before {
+    left: 0;
+    top: 0;
+    color: var(--background-color);
+}
+
+#add {
+    border: 2px var(--add) solid;
+}
+
+#add:before{
+    background-color: var(--add);
+}
+
+#less {
+    border: 2px var(--less) solid;
+}
+
+#less:before {
+    background-color: var(--less);
+}
+
+#multiplication {
+    border: 2px var(--multiplication) solid;
+}
+
+#multiplication:before {
+    background-color: var(--multiplication);
+}
+
+#division {
+    border: 2px var(--division) solid;
+}
+
+#division:before {
+    background-color: var(--division);
+}
+
+/* ---------------------------------------------------- */
+
+#img-home {
+    margin: 0;
+    padding: 0;
+    width: 50vh;
+    height: 50vh;
+}
+
+#app-container{
+    display: grid;
+    grid-template-rows: 50vh 40vh;
+    grid-template-columns: 40vw;
+    justify-content: center;
+}
+
+img {
+    margin-bottom: 0;
+    height: 40vh;
+}
+
+#multiplication-generation {
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+}
+
+li:hover {
+    color: white;
+}
+
+form {
+    font-family: 'Comic Neue', cursive;
+}
+
+input {
+    font-size: 1.5vw;
+}
+
+#multiplication-generation > h1 {
+    font-size: 6vw;
+    margin-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+button {
+    background-color: var(--button-color);
+    border: none;
+    width: 5vw;
+    height: 5vh;
+    border-radius: 0.2rem;
+    font-size: 1vw;
+}
+
+#result {
+    border-radius: 0.2rem;
+    background-color: var(--input-color);
+    border: none;   
+    width: 40%;
+    height: 5vh;
+}
+
+#container-result > h2 {
+    font-size: 3vw;
+    margin-bottom: 0;
+}
